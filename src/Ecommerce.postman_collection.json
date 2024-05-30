@@ -1,0 +1,685 @@
+{
+	"info": {
+		"_postman_id": "ecb4e127-7212-4e19-9564-4581b3470c42",
+		"name": "Ecommerce",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32605143",
+		"_collection_link": "https://speeding-crater-491494.postman.co/workspace/New-Team-Workspace~6c76cdb1-9ea5-4814-81ab-0a0672fbf415/collection/32605143-ecb4e127-7212-4e19-9564-4581b3470c42?action=share&source=collection_link&creator=32605143"
+	},
+	"item": [
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "ProductBrabdList",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE}}/ProductBrandList",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"ProductBrandList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ProductCategoryList",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE}}/ProductCategoryList",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"ProductCategoryList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ProductSliderList",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE}}/ProductSliderList",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"ProductSliderList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ProductListByBrand",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE}}/ProductListByBrand/64f8751a502e1b80556da142",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"ProductListByBrand",
+								"64f8751a502e1b80556da142"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ProductListByCategory",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE}}/ProductListByCategory/64f875ed502e1b80556da14d",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"ProductListByCategory",
+								"64f875ed502e1b80556da14d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ProductListBySmilier",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE}}/ProductListBySmilier/",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"ProductListBySmilier",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ProductListByKeyword",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE}}/ProductListByKeyword/Apple",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"ProductListByKeyword",
+								"Apple"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ProductListByRemark",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE}}/ProductListByRemark/special",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"ProductListByRemark",
+								"special"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ProductListByFilter",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"brandID\":\"64f8751a502e1b80556da142\",\r\n    \"categoryID\":\"64f875ed502e1b80556da14d\",\r\n    \"priceMin\":\"30\",\r\n    \"priceMax\":\"2000000\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE}}/ProductListByFilter",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"ProductListByFilter"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ProductDetails",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE}}/ProductDetails/64f8ba608fcc62fe3de37a2e",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"ProductDetails",
+								"64f8ba608fcc62fe3de37a2e"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Login  OTP Send",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE}}/UserOTP/sajibcsebd@gmail.com",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"UserOTP",
+								"sajibcsebd@gmail.com"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verify Login OTP",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE}}/VerifyLogin/sajibcsebd@gmail.com/647221",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"VerifyLogin",
+								"sajibcsebd@gmail.com",
+								"647221"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Logout",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE}}/UserLogout",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"UserLogout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateProfile",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cus_add\":\"KonaPara\",\r\n        \"cus_city\":\"Dhaka\",\r\n        \"cus_country\":\"Bangladesh\",\r\n        \"cus_fax\":\"Dhaka\",\r\n        \"cus_name\":\"Sajib Kundu\",\r\n        \"cus_phone\":\"017119326140\",\r\n        \"cus_postcode\":\"Dhaka\",\r\n        \"cus_state\":\"Dhaka\",\r\n        \"ship_add\":\"KonaPara\",\r\n        \"ship_city\":\"Dhaka\",\r\n        \"ship_country\":\"Bangladesh\",\r\n        \"ship_name\":\"Sajib\",\r\n        \"ship_phone\":\"017119326140\",\r\n        \"ship_postcode\":\"1306\",\r\n        \"ship_state\":\"Dhaka\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE}}/CreateProfile",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"CreateProfile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateProfile",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cus_add\":\"KonaPara\",\r\n        \"cus_city\":\"Dhaka\",\r\n        \"cus_country\":\"Bangladesh\",\r\n        \"cus_fax\":\"Dhaka\",\r\n        \"cus_name\":\"Sajib Kundu\",\r\n        \"cus_phone\":\"016119326140\",\r\n        \"cus_postcode\":\"Dhaka\",\r\n        \"cus_state\":\"Dhaka\",\r\n        \"ship_add\":\"KonaPara\",\r\n        \"ship_city\":\"Dhaka\",\r\n        \"ship_country\":\"Bangladesh\",\r\n        \"ship_name\":\"Sajib\",\r\n        \"ship_phone\":\"016119326140\",\r\n        \"ship_postcode\":\"1306\",\r\n        \"ship_state\":\"Dhaka\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE}}/UpdateProfile",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"UpdateProfile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ReadProfile",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE}}/ReadProfile",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"ReadProfile"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Wish",
+			"item": [
+				{
+					"name": "SaveWishList",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productID\":\"64f8ba608fcc62fe3de37a2e\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE}}/SaveWishList",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"SaveWishList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "WishList",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productID\":\"64f8ba608fcc62fe3de37a2e\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE}}/SaveWishList",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"SaveWishList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RemoveWishList",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productID\":\"64f8ba608fcc62fe3de37a2e\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE}}/RemoveWishList",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"RemoveWishList"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CartList",
+			"item": [
+				{
+					"name": "SaveCartList",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productID\":\"64f8ba608fcc62fe3de37a2e\",\r\n    \"color\":\"Blue\",\r\n    \"qty\":\"10\",\r\n    \"size\":\"Small\"\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE}}/SaveCartList",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"SaveCartList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateCartList",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n    \"color\":\"Green\",\r\n    \"qty\":\"15\",\r\n    \"size\":\"Small\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE}}/UpdateCartList/66419699a5a2d54d56651fdf",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"UpdateCartList",
+								"66419699a5a2d54d56651fdf"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RemoveCartList",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \r\n    \"productID\":\"64f8ba608fcc62fe3de37a2e\",\r\n    \"_id\":\"663f61a33818700335c718ef\"\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE}}/RemoveCartList",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"RemoveCartList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CartList",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE}}/CartList",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"CartList"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Invoice",
+			"item": [
+				{
+					"name": "CreateInvoice",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE}}/CreateInvoice",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"CreateInvoice"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "InvoiceList",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE}}/InvoiceList",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"InvoiceList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "InvoiceProductList",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE}}/InvoiceProductList/66419b80a5a2d54d56651fed",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"InvoiceProductList",
+								"66419b80a5a2d54d56651fed"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Features List",
+			"item": [
+				{
+					"name": "Features List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE}}/FeaturesList",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"FeaturesList"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Review",
+			"item": [
+				{
+					"name": "CreateReview",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productID\": \"64f8ba608fcc62fe3de37a2e\",\r\n    \"des\": \"RAbcded\",\r\n    \"rating\": \"4\"\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE}}/CreateReview",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"CreateReview"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Product Review List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE}}/ProductReviewList/64f8ba608fcc62fe3de37a2e",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"ProductReviewList",
+								"64f8ba608fcc62fe3de37a2e"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "BASE",
+			"value": "http://localhost:5020/api/v1",
+			"type": "string"
+		}
+	]
+}
